@@ -1,5 +1,13 @@
-const Hero = () => {
-  return <div>Hero</div>;
-};
 
-export default Hero;
+
+const Hero = () => {
+  return (
+    <>
+    
+    
+    
+    </>
+  )
+}
+
+export default Hero

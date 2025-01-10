@@ -7,8 +7,11 @@ import { IoIosArrowDown } from "react-icons/io";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { HiBars3 } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [drop, setDrop] = useState(false)
+
   return (
     <>
       <section className="top-header">
@@ -22,9 +25,21 @@ const Header = () => {
         </div>
         {/* main header  */}
         <div className="main-header max-w-[1686px] mx-auto mb-3 xl:mb-0 px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-x-5 sm:gap-x-7 md:gap-x-10 lg:gap-x-5 bg-[#010101] text-white lg:bg-white lg:text-black">
-          <div className="drop__down_menu xl:hidden">
-            <HiBars3 />
+          <div className="drop__down_menu xl:hidden relative" onClick={() => setDrop(!drop)}>
+            <HiBars3 className="text-lg cursor-pointer"/>
+          {/* --dropdown menu  */}
+          {drop && <div className="nav-links bg-[#F7F7F7] py-5 px-8 absolute left-0 top-14">
+            <ul className="flex flex-col gap-3 text-lg leading-6 uppercase font-semibold tracking-[0.1px] text-[#010101]">
+              <li className="flex items-center gap-[6px] group"><Link to={'/'}>Men</Link><IoIosArrowDown className="duration-300 group-hover:rotate-180" /></li>
+              <li className="flex items-center gap-[6px] group"><Link to={'/'}>Kids</Link><IoIosArrowDown className="duration-300 group-hover:rotate-180" /></li>
+              <li className="flex items-center gap-[6px] group"><Link to={'/'}>Women</Link><IoIosArrowDown className="duration-300 group-hover:rotate-180" /></li>
+              <li className="flex items-center gap-[6px] group"><Link to={'/'}>Sport</Link><IoIosArrowDown className="duration-300 group-hover:rotate-180" /></li>
+              <li className="flex items-center gap-[6px] group"><Link to={'/'}>Brands</Link><IoIosArrowDown className="duration-300 group-hover:rotate-180" /></li>
+              <li className="flex items-center gap-[6px] group"><Link to={'/'}>Sandals</Link><IoIosArrowDown className="duration-300 group-hover:rotate-180" /> </li>
+            </ul>
+          </div>}
           </div>
+          
           <div className="nav-logo w-[99px] sm:w-[145px] lg:w-[187px]">
             <img src={Logo} alt="" className="w-full hidden lg:block" />
             <img src={MLogo} alt="" className="w-full lg:hidden" />
@@ -97,10 +112,10 @@ const Header = () => {
       </section>
 
       <section className="responsive__freeShipping-offer">
-        <div className="py-2 mt-3 px-4 xl:hidden flex items-center justify-center gap-1 text-sm text-[#010101] font-secondaryFont shadow-md">
+        <div className="py-2 mt-3 px-4 bg-[#F7F7F7] xl:hidden flex items-center justify-center gap-1 text-sm text-[#010101] font-secondaryFont shadow-md">
           <CiDeliveryTruck />
           <p className="leading-6">
-            Spend $150 or more and get
+            Spend $150 or more and get &nbsp;
             <span className="underline">FREE SHIPPING</span> on your order!
           </p>
         </div>
