@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         secondaryFont: ['Poppins'],
       },
+      
     },
   },
   plugins: [],
