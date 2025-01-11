@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero-section px-4 sm:px-6 lg:px-8 mt-8">
+      <section className="hero-section px-4 sm:px-6 lg:px-8 mt-8 mb-16">
         <Slider {...settings}>
           {
             bannerSliders.map((banner) => {
