@@ -46,9 +46,9 @@ const PerfectPair = () => {
       <div className="perfect-pair-section mb-16 sm:mb-12 lg:mb-16">
         <Container>
           <div className="title-section flex justify-between items-center">
-            <div className="bg-[#E4E5E7] w-[30%] h-[2px]"></div>
+            {/* <div className="bg-[#E4E5E7] w-[30%] h-[2px]"></div> */}
             <h2 className="mb-6 text-[#010101] w-[35%] text-[30px] font-bold leading-9 text-center">FIND YOUR PERFECT PAIR</h2>
-            <div className="bg-[#E4E5E7] w-[30%] h-[2px]"></div>
+            {/* <div className="bg-[#E4E5E7] w-[30%] h-[2px]"></div> */}
           </div>
           <h2 className="mb-6 text-[#010101] text-[36px] font-thirdFont font-semibold leading-[56px] text-center">OUR MODEL RANGE</h2>
           <div className="pair-category-section mx-4 sm:mx-6 lg:mx-8 grid sm:grid-cols-3 grid-cols-2 gap-3 sm:gap-4 justify-center">

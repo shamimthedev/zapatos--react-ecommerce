@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         secondaryFont: ['Poppins'],
         thirdFont: ['Bebas Neue'],
+        fourthFont: ['Montserrat'],
       },
       
     },
