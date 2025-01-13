@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         secondaryFont: ['Poppins'],
+        thirdFont: ['Bebas Neue'],
       },
       
     },
