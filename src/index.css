@@ -5,3 +5,18 @@
 body {
   font-family: "Open Sans", serif;
 }
+
+/* slick-slider dots customization  */
+.slick-dots li{
+  /* border: 2px solid; */
+  height: 4px;
+  width: 70px;
+  background-color: slategray;
+  border-radius: 4px;
+}
+.slick-dots li:hover{
+  background-color: red;
+}
+.slick-dots li.slick-active{
+  background-color: blue;
+}

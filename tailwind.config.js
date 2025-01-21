@@ -5,14 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        secondaryFont: ['Poppins'],
-        thirdFont: ['Bebas Neue'],
-        fourthFont: ['Montserrat'],
-      },
-      
-    },
+    extend: { },
   },
   plugins: [],
 }
